@@ -1,0 +1,5 @@
+data(Garch, package="Ecdat")
+diffdm = diff(dm)
+pdf("dm_halfnormal.pdf", width=7, height = 6)
+halfnorm(abs(diffdm), main = "changes in DM/dollar exchange rate", ylab = "Sorted data")
+#graphics.off()
